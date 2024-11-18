@@ -7,7 +7,7 @@ on:
       - master  # Run this workflow on pushes to the main branch rerun
   pull_request:
     branches:
-      - master  # Run this workflow on pull requests targeting the main branch #rerun
+      - master  # Run this workflow on pull requests targeting the main branch #reru
 
 jobs:
   build:
