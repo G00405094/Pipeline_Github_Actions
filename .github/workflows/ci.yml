@@ -49,4 +49,5 @@ jobs:
       # Step to push Docker image to Docker Hub
       - name: Push Docker Image
         run: |
-          docker tag product_pipe_image ${{ secrets.DOCKER_USERNAME }}/product_pipe_image:l
+          docker tag product_pipe_image ${{ secrets.DOCKER_USERNAME }}/product_pipe_image:latest \
+          && docker push ${{ secrets.DOCKER_USERNAME }}/product_pipe_image:latest
